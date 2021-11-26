@@ -4,7 +4,108 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  background: linear-gradient(0deg, #fff 55%, #1c5380 45%); 
+  
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 2 400;
+  margin-left: 20%;
+  margin-right: 50px;
+}
+
+.right-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 520px;
+  margin-right: 20%;
+}
+
+.content-head {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 5px 25px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/frame.png);
+  background-repeat: no-repeat; 
+  max-width: 600px;
+  padding: 40px;
+}
+
+button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 85px;
+  background: #1c5380;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5%;
+  border: 1px solid #06365f;
+  box-shadow: 2px 1px black;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #06365f;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.app-store-badges {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 30px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+li {
+  color: #1c5380;
+  font-size: 14px;
+  font-weight: 600;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.grey {
+  color: grey;
 }
